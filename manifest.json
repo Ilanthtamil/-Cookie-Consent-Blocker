@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie Consent Blocker",
+  "version": "1.0",
+  "description": "Automatically hide cookie consent popups.",
+  "permissions": [],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["blocker.js"]
+  }]
+}
